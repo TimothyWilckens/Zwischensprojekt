@@ -3,11 +3,13 @@ public class Mensch {
     String vorname;
     String nachname;
     int alter;
+    boolean tot;
 
-    public Mensch(String vorname, String nachname, int alter){
+    public Mensch(String vorname, String nachname, int alter, boolean tot){
         setAlter(alter);
         setNachname(nachname);
         setVorname(vorname);
+        setTot(tot);
     }
 
 
@@ -20,6 +22,9 @@ public class Mensch {
     public void setVorname(String vorname) {
         this.vorname = vorname;
     }
+    public void setTot(boolean tot) {
+        this.tot = tot;
+    }
     public int getAlter() {
         return alter;
     }
@@ -28,5 +33,8 @@ public class Mensch {
     }
     public String getVorname() {
         return vorname;
+    }
+    public boolean getTOT() {
+        return tot;
     }
 }

@@ -2,8 +2,8 @@ public class Mitarbeiter extends Mensch{
     
     int gehalt;
 
-    public Mitarbeiter(String vorname, String nachname, int alter, int gehalt){
-        super(vorname, nachname, alter);
+    public Mitarbeiter(String vorname, String nachname, int alter, boolean tot, int gehalt){
+        super(vorname, nachname, alter, tot);
         setGehalt(gehalt);
     }
 
