@@ -1,5 +1,5 @@
 public class Mitarbeiter extends Mensch{
-    // Die Klasse Mitarbieter erbt von Mensch
+    // Die Klasse Mitarbieter erbt von Mensch (extends)
     
     int gehalt;
 

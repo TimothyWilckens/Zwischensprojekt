@@ -1,9 +1,13 @@
 public class Mensch {
     
+    //elematare Datentypen:
+    
     String vorname;
     String nachname;
     int alter;
     boolean tot;
+
+    //Konstruktor
 
     public Mensch(String vorname, String nachname, int alter, boolean tot){
         setAlter(alter);
@@ -12,6 +16,7 @@ public class Mensch {
         setTot(tot);
     }
 
+    //Setter und Getter: Dienstleistungs- und Rückgabemethoden
 
     public void setAlter(int alter) {
         this.alter = alter;
