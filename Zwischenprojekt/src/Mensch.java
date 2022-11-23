@@ -1,13 +1,13 @@
 public class Mensch {
     
-    //elematare Datentypen:
+    //ELEMENTARE DATENTYPEN:
     
     String vorname;
     String nachname;
     int alter;
     boolean tot;
 
-    //Konstruktor
+    //KONSTRUKTOR: überprüft ob die notwendigen Parameter für die Objekterzeugung gegeben sind 
 
     public Mensch(String vorname, String nachname, int alter, boolean tot){
         setAlter(alter);
@@ -16,9 +16,9 @@ public class Mensch {
         setTot(tot);
     }
 
-    //Setter und Getter: Dienstleistungs- und Rückgabemethoden
+    //SETTER & GETTER: Dienstleistungs- und Rückgabemethoden
 
-    public void setAlter(int alter) {
+    public void setAlter(int alter) { //Schlüsselwort: void
         this.alter = alter;
     }
     public void setNachname(String nachname) {
@@ -30,7 +30,7 @@ public class Mensch {
     public void setTot(boolean tot) {
         this.tot = tot;
     }
-    public int getAlter() {
+    public int getAlter() { //Schlüsselwort: return (und kein void)
         return alter;
     }
     public String getNachname() {
