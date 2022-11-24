@@ -4,8 +4,8 @@ public class App {
 
         //OBJEKTERZEUGUNG:
 
-        Mensch m1 = new Mensch("Hans", "Müller", 10, false);
-        Mensch m2 = new Mensch("Klara", "Schmidt", 101, false);
+        Mensch m1 = new Kunde("Hans", "Müller", 10, false, 12345);
+        Mensch m2 = new Mitarbeiter("Klara", "Schmidt", 101, false, 2000);
         Mitarbeiter ma1 = new Mitarbeiter("Max", "Mustermann", 20, false, 20000);
 
         //ARRAYLISTEN:

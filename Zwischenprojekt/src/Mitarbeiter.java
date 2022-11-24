@@ -14,4 +14,8 @@ public class Mitarbeiter extends Mensch{
     public int getGehalt() {
         return gehalt;
     }
+
+    public void showInfo(){
+        System.out.println(getGehalt());
+    }
 }

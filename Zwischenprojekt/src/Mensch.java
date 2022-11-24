@@ -1,4 +1,4 @@
-public class Mensch {
+public abstract class Mensch {
     
     //ELEMENTARE DATENTYPEN:
     
@@ -15,6 +15,8 @@ public class Mensch {
         setVorname(vorname);
         setTot(tot);
     }
+
+    public abstract void showInfo();
 
     //SETTER & GETTER: Dienstleistungs- und Rückgabemethoden
 
