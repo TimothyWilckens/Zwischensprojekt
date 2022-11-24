@@ -41,6 +41,7 @@ public class App {
         int k = 0;
     
         for(Mensch menschen : alleMenschen){
+            menschen.showInfo();
             if(menschen.getTOT() == false){            //mögliche Operatoren: >, <, >=, <=, !=,  == und || &&
                 lebendeMenschen[k] = menschen;
                 k++;
