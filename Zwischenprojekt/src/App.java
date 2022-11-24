@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 public class App {
+
+    static ArrayList<Mensch> alleMenschen;
     public static void main(String[] args) throws Exception {
 
         //OBJEKTERZEUGUNG:
@@ -10,7 +12,7 @@ public class App {
 
         //ARRAYLISTEN:
 
-        ArrayList<Mensch> alleMenschen = new ArrayList<>();
+        alleMenschen = new ArrayList<>();
         alleMenschen.add(m3);
         alleMenschen.add(m1);
         alleMenschen.add(m2);
@@ -36,6 +38,7 @@ public class App {
 
         Mensch[] lebendeMenschen = new Mensch[10];
         int k = 0;
+    
         for(Mensch menschen : alleMenschen){
             if(menschen.getTOT() == false){            //mögliche Operatoren: >, <, >=, <=, != und == 
                 lebendeMenschen[k] = menschen;
@@ -47,6 +50,25 @@ public class App {
 
         //FOR-SCHLEIFEN:
 
+        alleForschleifen();
+        
+
+        // While-Do und Do-While 
+        int i = 1;
+        while(i == 1){
+            System.out.println(1);
+            i ++;
+        }
+
+
+        int b = 2;
+        do{
+            System.out.println(1);
+        } while (b == 2);
+
+    }
+
+    public static void alleForschleifen(){
         for(int i = 0; i < 10; i++){     //wenn die Abbruchbedingung: i < 10 false ist, bricht die Schleife ab 
             System.out.println(i);
         }
@@ -54,7 +76,9 @@ public class App {
         for(int i = 2; i < 20; i= i+2){
             System.out.println(i);
         }
-        
 
+        for(int i = 500; i > 100; i -= 6){
+            System.out.println(i);
+        }
     }
 }
