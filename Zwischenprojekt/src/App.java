@@ -19,7 +19,8 @@ public class App {
 
         //SWITCH-CASES:
 
-        switch(alleMenschen.size()){ //das macht gar nicht mal so viel Sinn (weil es eine Array-LIST ist, aber egal)
+        //das macht gar nicht mal so viel Sinn (weil es eine Array-LIST ist, aber egal)
+        switch(alleMenschen.size()){ 
             
             case 0: //diese zahl ist der korrespondierende Wert der Variable, nicht die Nummer der Cases!!
             System.out.println("hmm, nicht so viele");
