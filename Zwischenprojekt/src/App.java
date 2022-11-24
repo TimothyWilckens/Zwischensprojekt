@@ -29,6 +29,7 @@ public class App {
             break;
             case 2:
             System.out.println("wow, sogar zwei");
+            break;
             case 3:
             System.out.println("hmm, vielleicht zu viele...");
             break;
@@ -40,7 +41,7 @@ public class App {
         int k = 0;
     
         for(Mensch menschen : alleMenschen){
-            if(menschen.getTOT() == false){            //mögliche Operatoren: >, <, >=, <=, != und == 
+            if(menschen.getTOT() == false){            //mögliche Operatoren: >, <, >=, <=, !=,  == und || &&
                 lebendeMenschen[k] = menschen;
                 k++;
             } else{                                    //else oder else-if sind nicht zwingend notwendig
@@ -64,6 +65,7 @@ public class App {
         int b = 2;
         do{
             System.out.println(1);
+            b++;
         } while (b == 2);
 
     }
