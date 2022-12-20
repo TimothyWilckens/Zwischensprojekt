@@ -46,7 +46,10 @@ public class App {
             if(menschen.getTOT() == false){            //mögliche Operatoren: >, <, >=, <=, !=,  == und || &&
                 lebendeMenschen[k] = menschen;
                 k++;
-            } else{                                    //else oder else-if sind nicht zwingend notwendig
+            } else if(menschen.getAlter() >= 120){
+                System.out.println(menschen.getVorname() + " sollte eigentlich schon längst tot sein");
+                
+            } else{
                 System.out.println(menschen.getVorname() + "ist (leider) nicht mehr am leben :(");
             }
         }
