@@ -1,17 +1,17 @@
 public class Mitarbeiter extends Mensch{
     // Die Klasse Mitarbieter ERBT von Mensch (extends)
     
-    int gehalt;
+    double gehalt;
 
-    public Mitarbeiter(String vorname, String nachname, int alter, boolean tot, int gehalt){
+    public Mitarbeiter(String vorname, String nachname, int alter, boolean tot, double gehalt){
         super(vorname, nachname, alter, tot);
         setGehalt(gehalt);
     }
 
-    public void setGehalt(int gehalt) {
+    public void setGehalt(double gehalt) {
         this.gehalt = gehalt;
     }
-    public int getGehalt() {
+    public double getGehalt() {
         return gehalt;
     }
 
